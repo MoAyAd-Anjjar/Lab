@@ -1,0 +1,244 @@
+
+        <!DOCTYPE html>
+        <html dir="rtl" lang="ar">
+        <head>
+          <meta charset="UTF-8">
+          <title>تقرير طبي - ذ12312</title>
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { font-family: 'Tajawal', sans-serif; background: #fff; color: #333; padding: 20px; }
+            
+            .report-container {
+              max-width: 1000px;
+              margin: 0 auto;
+              padding: 30px;
+              background: #fff;
+              box-shadow: 0 0 30px rgba(0,0,0,0.1);
+              border-radius: 15px;
+            }
+            
+            .report-header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding-bottom: 20px;
+              border-bottom: 3px solid #4f46e5;
+              margin-bottom: 30px;
+            }
+            
+            .clinic-info h1 {
+              color: #4f46e5;
+              font-size: 28px;
+              margin-bottom: 5px;
+            }
+            
+            .clinic-info p {
+              color: #666;
+              font-size: 16px;
+            }
+            
+            .report-meta {
+              text-align: left;
+              background: #f8fafc;
+              padding: 15px;
+              border-radius: 10px;
+              border: 1px solid #e2e8f0;
+            }
+            
+            .patient-section {
+              display: flex;
+              gap: 30px;
+              margin-bottom: 30px;
+              padding: 20px;
+              background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+              border-radius: 12px;
+            }
+            
+            .patient-photo {
+              flex: 0 0 180px;
+            }
+            
+            .patient-photo img {
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              border-radius: 10px;
+              border: 3px solid #fff;
+              box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+            
+            .no-photo {
+              width: 100%;
+              height: 200px;
+              background: linear-gradient(135deg, #4f46e5, #7c3aed);
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: bold;
+              font-size: 18px;
+            }
+            
+            .patient-details {
+              flex: 1;
+            }
+            
+            .patient-details h2 {
+              color: #4f46e5;
+              margin-bottom: 20px;
+              font-size: 24px;
+              border-right: 4px solid #4f46e5;
+              padding-right: 15px;
+            }
+            
+            .details-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 15px;
+            }
+            
+            .details-grid div {
+              padding: 12px 15px;
+              background: white;
+              border-radius: 8px;
+              border: 1px solid #e2e8f0;
+            }
+            
+            .diagnosis-section {
+              margin-bottom: 40px;
+            }
+            
+            .diagnosis-section h2 {
+              color: #dc2626;
+              font-size: 24px;
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              border-right: 4px solid #dc2626;
+              padding-right: 15px;
+            }
+            
+            .diagnosis-content {
+              background: #fef2f2;
+              padding: 25px;
+              border-radius: 12px;
+              border: 1px solid #fecaca;
+              line-height: 1.8;
+              font-size: 18px;
+              min-height: 200px;
+            }
+            
+            .diagnosis-content p {
+              margin-bottom: 10px;
+            }
+            
+            .footer-section {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 50px;
+              padding-top: 30px;
+              border-top: 2px dashed #cbd5e1;
+            }
+            
+            .doctor-signature {
+              flex: 1;
+            }
+            
+            .doctor-signature p {
+              margin-bottom: 10px;
+              color: #555;
+            }
+            
+            .stamp-placeholder {
+              text-align: center;
+            }
+            
+            .stamp {
+              width: 150px;
+              height: 150px;
+              border: 3px solid #dc2626;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transform: rotate(15deg);
+            }
+            
+            .stamp span {
+              color: #dc2626;
+              font-weight: bold;
+              font-size: 18px;
+            }
+            
+            @media print {
+              body { padding: 0; }
+              .report-container { box-shadow: none; border: 2px solid #000; }
+              .no-print { display: none !important; }
+              .patient-section { break-inside: avoid; }
+            }
+          </style>
+        </head>
+        <body>
+          
+        <div class="report-container">
+          <div class="report-header">
+            <div class="clinic-info">
+              <h1>العيادة الطبية المتخصصة</h1>
+              <p>تقرير طبي - Medical Report</p>
+            </div>
+            <div class="report-meta">
+              <p><strong>رقم التقرير:</strong> report_22321412312_1769538586007</p>
+              <p><strong>التاريخ:</strong> ٢٧‏/١‏/٢٠٢٦</p>
+            </div>
+          </div>
+          
+          <div class="patient-section">
+            <div class="patient-photo">
+              <div class="no-photo">لا توجد صورة</div>
+            </div>
+            <div class="patient-details">
+              <h2>معلومات المريض</h2>
+              <div class="details-grid">
+                <div><strong>الاسم:</strong> ذ12312</div>
+                <div><strong>رقم الهوية:</strong> 22321412312</div>
+                <div><strong>العمر:</strong> 3123</div>
+                <div><strong>الجنس:</strong> </div>
+                <div><strong>فصيلة الدم:</strong> </div>
+                <div><strong>الهاتف:</strong> 12312</div>
+                <div><strong>العنوان:</strong> 123</div>
+                <div><strong>تاريخ الإضافة:</strong> 2026-01-27T18:25:04.177Z</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="diagnosis-section">
+            <h2><span>📋</span> التشخيص والعلاج</h2>
+            <div class="diagnosis-content">
+              <p>ارتفاع ضغط الدم من الدرجة الثانية، يحتاج إلى متابعة منتظمة.</p>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <div class="doctor-signature">
+              <p>________________________________</p>
+              <p><strong>اسم الطبيب:</strong> د. أحمد محمد</p>
+              <p><strong>التخصص:</strong> طب عام</p>
+              <p><strong>رقم الترخيص:</strong> MED-2023-4567</p>
+            </div>
+            <div class="stamp-placeholder">
+              <div class="stamp">
+                <span>ختم العيادة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+          <div class="no-print" style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
+            <p style="color: #666; font-size: 14px;">هذا التقرير تم إنشاؤه آلياً من قبل النظام الطبي</p>
+          </div>
+        </body>
+        </html>
+      
