@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Neutralinojs + Vite + React + Typescript
 A simple [React](https://react.dev/) template for building [Neutralinojs](https://neutralino.js.org/) apps with [Vite](https://vitejs.dev/) as bundler and [Typescript](https://www.typescriptlang.org/)
 
@@ -40,3 +41,7 @@ neu build
 ## License
 
 [MIT](LICENSE)
+=======
+# Lab
+project for labs in Arabic language
+>>>>>>> 8f1fbdeed57f21bc6ca1babc5a240c014e63dd12
