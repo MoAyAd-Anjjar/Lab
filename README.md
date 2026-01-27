@@ -44,4 +44,3 @@ neu build
 =======
 # Lab
 project for labs in Arabic language
->>>>>>> 8f1fbdeed57f21bc6ca1babc5a240c014e63dd12
