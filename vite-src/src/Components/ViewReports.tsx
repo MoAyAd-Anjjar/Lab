@@ -613,7 +613,7 @@ const ViewReports: React.FC<Props> = ({ onBack }) => {
     if (!confirm(`⚠️ هل أنت متأكد من حذف التقرير "${fileName}"؟`)) return;
     try {
       const path = reportsDir(NL_PATH) + '/' + fileName;
-      await Neutralino.filesystem.removeFile(path);
+      await Neutralino.filesystem.remove(path);
       await loadReports();
       alert('✅ تم حذف التقرير بنجاح');
     } catch (err) {

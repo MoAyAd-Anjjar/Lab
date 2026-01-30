@@ -1,6 +1,6 @@
 {
   "applicationId": "js.neutralino.zero",
-  "version": "1.0.0",
+  "version": "22.0.0",
   "defaultMode": "window",
   "documentRoot": "/vite-src/dist/",
   "url": "/",
@@ -18,7 +18,13 @@
     "filesystem.copy",
     "filesystem.writeFile",
     "filesystem.readFile",
-    "filesystem.createDirectory"
+    "filesystem.createDirectory",
+    "NE_RT_NATPRME",
+    "os.execCommand",
+    "os.getPath",
+    "window.getPosition",
+    "filesystem.getAbsolutePath",
+    "filesystem.getJoinedPath"
   ],
   "singlePageServe": true,
   "modes": {
@@ -28,11 +34,12 @@
       "height": 500,
       "minWidth": 400,
       "minHeight": 200,
-      "icon": "/vite-src/public/neutralino.png",
+      "icon": "/vite-src/public/lab.png",
       "enableInspector": true
     }
   },
   "cli": {
+    "icon":"/vite-src/public/lab.ico",
     "binaryName": "Labs",
     "resourcesPath": "/vite-src/dist/",
     "extensionsPath": "/extensions/",
@@ -45,6 +52,7 @@
       "initCommand": "npm install",
       "devCommand": "npm run dev",
       "buildCommand": "npm run build"
+      
     }
   }
 }
